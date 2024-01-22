@@ -57,6 +57,9 @@ if __name__ == '__main__':
     # Warp the image
     warped2 = ipm_from_opencv(image, s, t)
 
+    cv2.imwrite('/content/cvml_project/projections/ipm/resource/IPM.jpg', warped1)
+    cv2.imwrite('/content/cvml_project/projections/ipm/resource/IPM from OpenCv.jpg', warped2)
+
     # Draw results
     fig, ax = plt.subplots(1, 3)
 
